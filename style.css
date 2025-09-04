@@ -1,0 +1,130 @@
+/* Reset */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+h1,
+h2,
+h3 {
+	font-weight: inherit;
+	font-size: inherit;
+	overflow-wrap: break-word;
+	line-height: 1.1;
+}
+input,
+label,
+button {
+  font: inherit;
+}
+
+:root {
+	/* Primary */
+
+	--Red-500: hsl(1, 90%, 64%);
+	--Blue-950: hsl(219, 85%, 26%);
+
+	/* Neutral */
+
+	--White: hsl(0, 100%, 100%);
+	--Navy-50: hsl(210, 60%, 98%);
+	--Blue-100: hsl(211, 68%, 94%);
+	--Navy-100: hsl(205, 33%, 90%);
+	--Gray-500: hsl(219, 14%, 63%);
+	--Gray-600: hsl(219, 12%, 42%);
+	--Navy-950: hsl(224, 21%, 14%);
+}
+
+body {
+	min-height: 100vh;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	color: var(--Navy-50);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+  	line-height: 1.5;
+  	background-color: var(--Navy-50);
+  	color: var(--Navy-950);
+
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 1rem;
+}
+
+.page__container {
+	background-color: var(--White);
+	border-radius: 15px;
+	padding: 2rem;
+	max-width: 730px;
+	width: 100%;
+	margin-block: 3rem;
+	box-shadow: 0 20px 60px rgba(73, 97, 168, 0.05);
+}
+.page__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+.header-left {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+.title {
+	font-size: 1.5rem;
+  	font-weight: 800;
+  	color: var(--Navy-950);
+}
+.notification-count {
+	font-weight: 800;
+	font-size: 1rem;
+	padding: 0.25rem 0.75rem;
+	border-radius: 6px;
+	min-width: 2rem;
+	text-align: center;
+	background-color: var(--Blue-950);
+	color: var(--White);
+}
+.mark-all-read-btn {
+	color: var(--Gray-600);
+	background-color: transparent;
+	border: none;
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: color 0.2s ease;
+}
+.page__notifications-list {
+}
+.notification {
+}
+.unread {
+}
+.avatar {
+}
+.notification-content {
+}
+.notification-text {
+}
+.name {
+}
+.post-title {
+}
+.unread-icon {
+}
+.timestamp {
+}
+.group-name {
+}
+.private-message {
+}
+.post-name {
+}
