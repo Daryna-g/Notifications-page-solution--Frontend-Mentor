@@ -137,21 +137,84 @@ body {
   	border-radius: 50%;
   	flex-shrink: 0;
 }
+
 .notification-content {
+	flex: 1;
+  	display: flex;
+  	flex-direction: column;
+  	gap: 0.25rem;
 }
 .notification-text {
+	display: flex;
+  	align-items: center;
+  	gap: 0.25rem;
+  	flex-wrap: wrap;
 }
+
 .name {
+	font-weight: 800;
+  	color: var(--Navy-950);
+  	cursor: pointer;
+  	transition: color 0.2s ease;
 }
+.name:hover {
+	color: var(--Blue-950);
+}
+
 .post-title {
+	font-weight: 800;
+	color: var(--Gray-600);
+	cursor: pointer;
+	transition: color 0.2s ease;
 }
+.post-title:hover {
+	color: var(--Blue-950);
+}
+
+.group-name {
+	font-weight: 800;
+  	color: var(--Blue-950);
+  	cursor: pointer;
+  	transition: color 0.2s ease;
+}
+
 .unread-icon {
+	width: 8px;
+  height: 8px;
+  background-color: var(--Red-500);
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-left: 0.25rem;
 }
 .timestamp {
+	color: var(--Gray-600);
+	font-size: 1rem;
+	margin-top: 0.125rem;
 }
-.group-name {
-}
+
 .private-message {
+	margin-top: 0.75rem;
+	padding: 1rem;
+	background-color: var(--White);
+	border: 1px solid var(--Navy-100);
+	border-radius: 5px;
+	color: var(--Gray-600);
+	cursor: pointer;
+	transition: background-color 0.2s ease;
 }
-.post-name {
+.private-message:hover {
+	background-color: var(--Blue-100);
+}
+
+.picture-mini {
+	width: 45px;
+	height: 45px;
+	border-radius: 7px;
+	margin-left: auto;
+	cursor: pointer;
+	transition: transform 0.2s ease;
+	flex-shrink: 0;
+}
+.picture-mini:hover {
+	transform: scale(1.05);
 }
