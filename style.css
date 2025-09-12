@@ -180,11 +180,11 @@ body {
 
 .unread-icon {
 	width: 8px;
-  height: 8px;
-  background-color: var(--Red-500);
-  border-radius: 50%;
-  flex-shrink: 0;
-  margin-left: 0.25rem;
+	height: 8px;
+	background-color: var(--Red-500);
+	border-radius: 50%;
+	flex-shrink: 0;
+	margin-left: 0.25rem;
 }
 .timestamp {
 	color: var(--Gray-600);
@@ -217,4 +217,75 @@ body {
 }
 .picture-mini:hover {
 	transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+	body {
+		padding: 0;
+		justify-content: flex-start;
+	}
+	
+	.page__container {
+		border-radius: 0;
+		padding: 1.5rem 1rem;
+		min-height: 100vh;
+		box-shadow: none;
+		margin-block: 0px;
+	}
+	
+	.page__header {
+		margin-bottom: 1.5rem;
+	}
+	
+	.title {
+		font-size: 1.25rem;
+	}
+	
+	.notification {
+		padding: 1rem 0.5rem;
+	}
+	
+	.notification-text {
+		font-size: 0.95rem;
+	}
+	
+	.timestamp {
+		font-size: 0.95rem;
+	}
+	
+	.private-message {
+		margin-top: 0.5rem;
+		padding: 0.875rem;
+		font-size: 0.95rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.page__header {
+	  flex-direction: column;
+	  align-items: flex-start;
+	  gap: 1rem;
+	}
+	
+	.header-left {
+	  width: 100%;
+	}
+	
+	.mark-all-read {
+	  align-self: flex-start;
+	}
+	
+	.notification {
+	  gap: 0.75rem;
+	}
+	
+	.avatar {
+	  width: 40px;
+	  height: 40px;
+	}
+	
+	.picture-mini {
+	  width: 40px;
+	  height: 40px;
+	}
 }
