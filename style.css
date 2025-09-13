@@ -187,7 +187,7 @@ body {
 	margin-left: 0.25rem;
 }
 .timestamp {
-	color: var(--Gray-600);
+	color: var(--Gray-500);
 	font-size: 1rem;
 	margin-top: 0.125rem;
 }
